@@ -1,0 +1,71 @@
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
+
+.pass-form {
+    margin: 5% 0 0 0;
+    box-shadow: 2px 6px 12px 0 rgba(0,0,0, .30),
+    2px 8px 16px 0 rgba(0,0,0, .20) !important;
+    padding: 3% 10% 3% 10%;
+}
+
+.text-bottom {
+    color: white !important;
+    margin: 0.5vh 0 0 0;
+}
+
+.text-head {
+    color: RGBA(250, 250, 250, 0.7) !important;
+}
+
+.text-head:hover,
+.text-head:focus,
+.text-head:visited {
+    color: RGBA(250, 250, 250, 0.85) !important;
+}
+
+.text-page {
+    color: RGBA(0,0,0,0.6) !important;
+}
+
+.about-form {
+    margin: 8% 0 0 0;
+}
+
+.btn-primary {
+    background-color: RGBA(35,65,90);
+    border-color: RGBA(35,65,90);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:visited {
+    background-color: RGBA(35,65,90,0.85);
+    border-color: RGBA(35,65,90,0.85);
+}
+
+.btn-outline-primary {
+    color: RGBA(35,65,90);
+    border-color: RGBA(35,65,90);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:visited {
+    background-color: RGBA(35,65,90);
+    border-color: RGBA(35,65,90);
+}
+
+select, .form-check-input {
+    background-color: #b2bcdb !important;
+}
+
+.alert-success {
+    background-color: #93aab5 !important;
+    border-color: #93aab5 !important;
+    color: RGBA(0,0,0,0.7) !important;
+}
