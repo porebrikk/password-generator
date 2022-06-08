@@ -2,9 +2,11 @@
 {% load static %}
 {% block content %}
 
-    <div class="container text-center">
-        <h1> About project</h1>
-        <h4>This is a password generator created by Porebrikk</h4>
-        <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+    <div class="d-flex my-5 justify-content-center">
+        <div class="container-fluid about-form text-center p-3 mb-5 rounded">
+            <h1 class="text-page"> About project</h1>
+            <h4 class="text-page">This is a password generator created by Porebrikk</h4>
+            <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+        </div>
     </div>
 {% endblock %}

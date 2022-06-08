@@ -3,30 +3,55 @@
 
 {% block content %}
 
-    <div class="container text-center">
-        <h1>Password Generator</h1>
-
-        <form action="{% url 'password' %}">
-            <select name="length">
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12" selected="selected">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-            </select>  Length
-        <br>
-            <input type="checkbox" name="uppercase">UPPERCASE
-        <br>
-            <input type="checkbox" name="numbers">Num6ers
-        <br>
-            <input type="checkbox" name="special">$pecial Char@cters
-        <br>
-            <input type="submit" value="Generate Password" class="btn btn-primary">
-        </form>
+    <div class="d-flex justify-content-center my-5">
+        <div class="d-flex text-center justify-content-center rounded pass-form">
+            <form action="{% url 'password' %}">
+                <h1 class="text-page">Generate it!</h1>
+                <div class="d-flex">
+                    <label class="col-form-label mx-4"><h5>Length</h5></label>
+                    <select class="form-select" name="Length">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12" selected="selected">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select>
+                </div>
+            <br>
+                <fieldset class="row mb-1">
+                    <legend class="col-form-label col-sm-2 pt-0"><h5>Pass Settings</h5></legend>
+                    <div class="col-sm-10">
+                        <div class="row mb-3">
+                            <div class="col-sm-10 offset-sm-2">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="uppercase" id="uppercase">
+                                <label class="form-check-label" for="uppercase">
+                                  <h6>UPPERCASE</h6>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="numbers" id="numbers">
+                                <label class="form-check-label" for="numbers">
+                                  <h6>Num6ers</h6>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="special" id="special">
+                                <label class="form-check-label" for="special">
+                                    <h6>$pecial Char@cters</h6>
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Go" class="btn btn-primary px-5">
+            </form>
+        </div>
     </div>
 
 {% endblock %}
