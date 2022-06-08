@@ -11,6 +11,7 @@ footer {
     box-shadow: 2px 6px 12px 0 rgba(0,0,0, .30),
     2px 8px 16px 0 rgba(0,0,0, .20) !important;
     padding: 3% 10% 3% 10%;
+    background-color: #93a0ab !important;
 }
 
 .text-bottom {
@@ -65,7 +66,7 @@ select, .form-check-input {
 }
 
 .alert-success {
-    background-color: #93aab5 !important;
-    border-color: #93aab5 !important;
+    background-color: #93a0ab !important;
+    border-color: #93a0ab !important;
     color: RGBA(0,0,0,0.7) !important;
 }
